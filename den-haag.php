@@ -48,8 +48,7 @@ foreach ($sheetNames as $sheetName) {
     }
 }
 
-
-
+header("Access-Control-Allow-Origin: *");
 header("Content-type: text/json");
 echo json_encode($rs);
 
