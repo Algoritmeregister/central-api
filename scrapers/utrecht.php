@@ -1,6 +1,6 @@
 <?php
 
-require 'vendor/autoload.php';
+require '../vendor/autoload.php';
 
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
@@ -8,7 +8,7 @@ use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 // LOAD UTRECHT DATA :)
 
 $url = "https://data.utrecht.nl/sites/default/files/open-data/algoritmeregister-gemeente-utrecht-definitieve-versie.xlsx";
-$filename = __DIR__ . "/cache/". md5($url) . ".xlsx";
+$filename = __DIR__ . "/../cache/". md5($url) . ".xlsx";
 
 if (!file_exists($filename)) { // FIXME: refresh daily?
     $contents = file_get_contents($url);

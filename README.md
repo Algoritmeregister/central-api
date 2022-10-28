@@ -12,6 +12,4 @@ uses https://phpspreadsheet.readthedocs.io/en/latest/
 
 use `composer install`
 
-`docker run -it --rm -v "$PWD":/var/www/html -p 8080:80 php:7.2-apache`
-
-`php -S localhost:8080`
+`docker run -it --rm -v "$PWD":/var/www/html -p 8080:80 php:7.3-apache`

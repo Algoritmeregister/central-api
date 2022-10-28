@@ -1,6 +1,6 @@
 <?php
 
-require 'vendor/autoload.php';
+require '../vendor/autoload.php';
 $httpClient = new \GuzzleHttp\Client();
 $response = $httpClient->get('https://www.rotterdam.nl/bestuur-organisatie/algoritmeregister/');
 $htmlString = (string) $response->getBody();
