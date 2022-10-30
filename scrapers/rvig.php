@@ -20,7 +20,8 @@ foreach ($items as $item) {
     $html = file_get_html($href); // QUERY ALL PAGES INDIVIDUALLY
     $accItems = $html->find("div.accordion__item");
     $algoritmeregister[$name] = [
-        "Naam" => $name
+        "Naam" => $name,
+        "URL" => $href
     ];
     foreach ($accItems as $accItem) {
         $title = $accItem->find(".accordion__item-title", 0)->innertext();
