@@ -29,7 +29,7 @@ $reader = new \PhpOffice\PhpSpreadsheet\Reader\Xlsx();
 $spreadsheet = $reader->load($filename);
 
 // LOAD INFORMATION
-$sheetName = "Het Register";
+$sheetName = "Register";
 $algoritmes = [];
 
 $worksheet = $spreadsheet->getSheetByName($sheetName);
